@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>iAutomate</title>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">iAutomate</a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-registered fa-lg"></span> Registration</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./table.html"><span class="fa fa-info fa-lg"></span> CustomersDetails</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="row row-content">
+           <div class="col-12">
+              <h3><b>Customer Details</b></h3>
+           </div>
+            <div class="col-12 col-md-9">
+                <!-- Form filling -->
+                    <form>
+                            <!-- cutomer name -->
+                            <div class="form-group row">
+                                <label for="customername" class="col-md-2 col-form-label"><b>Customer Name</b></label>
+                                <div class="col-md-10">
+                                    <input type="text" class="form-control" id="customername" name="customername" placeholder="Enter Customer Name">
+                                </div>
+                            </div>
+                            <!-- url -->
+                            <div class="form-group row">
+                                <label for="url" class="col-md-2 col-form-label"><b>URL</b></label>
+                                <div class="col-md-10">
+                                    <input type="url" class="form-control" id="url" name="url" placeholder="Enter url">
+                                </div>
+                            </div>
+                            <!-- customer user id -->
+                            <div class="form-group row">
+                                    <label for="userid" class="col-md-2 col-form-label"><b>User ID</b></label>
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" id="userid" name="userid" placeholder="Enter user id">
+                                    </div>
+                                </div>
+                            <!-- customer password -->
+                            <div class="form-group row">
+                                    <label for="password" class="col-md-2 col-form-label"><b>Password</b></label>
+                                    <div class="col-md-10">
+                                        <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password">
+                                    </div>
+                            </div>
+
+                            <!-- test hide proxy details on uncheck -->
+                            <script type="text/javascript">
+                                function ShowHideDiv(chkProxy) {
+                                    var dvProxyURL = document.getElementById("dvProxyURL");
+                                    var dvProxyUID = document.getElementById("dvProxyUID");
+                                    var dvProxyPASS = document.getElementById("dvProxyPASS");
+                                    dvProxyURL.style.display = chkProxy.checked ? "block" : "none";
+                                    dvProxyUID.style.display = chkProxy.checked ? "block" : "none";
+                                    dvProxyPASS.style.display = chkProxy.checked ? "block" : "none";
+                                }
+                            </script>
+                            <label for="chkProxy">
+                                <input type="checkbox" id="chkProxy" onclick="ShowHideDiv(this)" />
+                                <strong>Proxy Required?</strong>
+                            </label>
+                            <hr>
+                            <!-- proxy url  -->
+                            <div class="form-group row">
+                               
+                                    <label for="purl" id="laProxyURL" class="col-md-2 col-form-label"><b>ProxyURL</b></label>
+                                   
+                                    <div class="col-md-10">
+                                            <input type="url" class="form-control" id="dvProxyURL" name="purl" placeholder="Enter proxy url" style="display: none">
+                                    </div>
+                                
+                            </div>
+                            <!-- proxy user id -->
+                            <div class="form-group row">
+                                    <label for="proxyuserid" class="col-md-2 col-form-label"><b>ProxyUserID</b></label>
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" id="dvProxyUID" name="proxyuserid" placeholder="Enter proxy user id" style="display: none" >
+                                    </div>
+                            </div>
+                            <!-- proxy password -->
+                            <div class="form-group row">
+                                    <label for="proxypassword" class="col-md-2 col-form-label"><b>ProxyPassword</b></label>
+                                    <div class="col-md-10">
+                                        <input type="password" class="form-control" id="dvProxyPASS" name="proxypassword" placeholder="Enter proxy Password" style="display: none">
+                                    </div>
+                            </div>
+                            <!-- test end of hide proxy details on uncheck -->
+                           
+                            <!-- is proxy Required -->
+                        <!--
+                            <div class="form-group row">
+                                    <div class="col-12 col-md-6 offset-md-2">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" name="approve" id="approve" value="">
+                                            <label class="form-check-label" for="approve">
+                                                <strong>Proxy Required?</strong>
+                                            </label>
+                                        </div>
+                                                                      
+                                    </div>
+                                   
+                            </div>
+
+                        --> 
+                            <!-- proxy url  -->
+                         <!--   
+                            <div class="form-group row">
+                                <label for="purl" class="col-md-2 col-form-label"><b>ProxyURL</b></label>
+                                <div class="col-md-10">
+                                    <input type="url" class="form-control" id="purl" name="purl" placeholder="Enter proxy url">
+                                </div>
+                            </div>
+                        --> 
+                            <!-- proxy user id -->
+                        <!--
+                            <div class="form-group row">
+                                    <label for="proxyuserid" class="col-md-2 col-form-label"><b>ProxyUserID</b></label>
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" id="proxyuserid" name="proxyuserid" placeholder="Enter proxy user id">
+                                    </div>
+                            </div>
+                        --> 
+                            <!-- proxy password -->
+                          <!--  
+                            <div class="form-group row">
+                                    <label for="proxypassword" class="col-md-2 col-form-label"><b>ProxyPassword</b></label>
+                                    <div class="col-md-10">
+                                        <input type="password" class="form-control" id="proxypassword" name="proxypassword" placeholder="Enter proxy Password">
+                                    </div>
+                            </div>
+                          -->
+                          <!-- start testing -->
+                          
+
+                          <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> -->
+                          <script type="text/javascript">
+                             function ShowHideDivMail(chkMailer) {
+                                // $(function () {
+                                //     $("#chkMailer").click(function () {
+                                //         if ($(this).is(":checked")) {
+                                //             $("#dvMailSubject").show();
+                                //             $("#dvEmailIdFrom").show();
+                                //             $("#dvEmailIdTo").show();
+                                //         } else {
+                                //             $("#dvMailSubject").hide();
+                                //             $("#dvEmailIdFrom").hide();
+                                //             $("#dvEmailIdTo").hide();
+                                //         }
+                                //     });
+                                // });
+
+                                var dvMailSubject = document.getElementById("dvMailSubject");
+                                var dvEmailIdFrom = document.getElementById("dvEmailIdFrom");
+                                var dvEmailIdTo = document.getElementById("dvEmailIdTo");
+                                dvMailSubject.style.display = chkMailer.checked ? "block" : "none";
+                                dvEmailIdFrom.style.display = chkMailer.checked ? "block" : "none";
+                                dvEmailIdTo.style.display = chkMailer.checked ? "block" : "none";
+                             }
+                        </script>
+                        <label for="chkMailer">
+                                <input type="checkbox" id="chkMailer" onclick="ShowHideDivMail(this)" />
+                                <strong>IsMailerRequied?</strong>
+                        </label>
+                         <hr>
+                          <!-- end testing -->
+                             <!-- is mailer required -->
+                             <!-- <div class="form-group row">
+                                    <div class="col-md-6 offset-md-2">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" name="approve" id="chkMailer" value="">
+                                            <label class="form-check-label" for="approve">
+                                                <strong>IsMailerRequied?</strong>
+                                            </label>
+                                        </div>
+                                    </div>
+                               </div> -->
+                            <!-- mail subject -->
+                            <div class="form-group row">
+                                <label for="mailsubject" class="col-md-2 col-form-label"><b>Mail Subject</b></label>
+                                <div class="col-md-10">
+                                    <input type="text" class="form-control" id="dvMailSubject" name="mailsubject" placeholder="Enter Mail Subject" style="display: none">
+                                </div>
+                            </div>
+                            <!-- mailer from -->
+                            <div class="form-group row">
+                                    <label for="emailidfrom" class="col-md-2 col-form-label"><b>Email From</b></label>
+                                    <div class="col-md-10">
+                                        <input type="email" class="form-control" id="dvEmailIdFrom" name="emailidfrom" placeholder="Email id from" style="display: none">
+                                    </div>
+                            </div>
+                            <!-- mailer to -->
+                            <div class="form-group row">
+                                    <label for="emailidto" class="col-md-2 col-form-label"><b>Email To</b></label>
+                                    <div class="col-md-10">
+                                        <input type="email" class="form-control" id="dvEmailIdTo" name="emailidto" placeholder="Email id to" style="display: none">
+                                    </div>
+                            </div>
+                            <!-- is Active -->
+                            <div class="form-group row">
+                                    <div class="col-md-6 offset-md-2">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" name="approve" id="approve" value="">
+                                            <label class="form-check-label" for="approve">
+                                                <strong>IsActive?</strong>
+                                            </label>
+                                        </div>
+                                    </div>
+                             </div>
+                             <!-- created by -->
+                             <div class="form-group row">
+                                    <label for="createdby" class="col-md-2 col-form-label"><b>Created By</b></label>
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" id="createdby" name="createdby" placeholder="Enter Created By">
+                                    </div>
+                             </div>
+                             <!-- created data -->
+                             <div class="form-group row">
+                                    <label for="createddate" class="col-md-2 col-form-label"><b>Created Date</b></label>
+                                    <div class="col-md-10">
+                                        <input type="date" class="form-control" id="createdby" name="createdby" placeholder="Enter Created Date">
+                                    </div>
+                             </div>
+                             <!-- is mailer run -->
+                             <div class="form-group row">
+                                    <div class="col-md-6 offset-md-2">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" name="approve" id="approve" value="">
+                                            <label class="form-check-label" for="approve">
+                                                <strong>IsMailerRun?</strong>
+                                            </label>
+                                        </div>
+                                    </div>
+                             </div>
+                             <!-- Last run date -->
+                             <div class="form-group row">
+                                    <label for="lastrundate" class="col-md-2 col-form-label"><b>Last Run Date</b></label>
+                                    <div class="col-md-10">
+                                        <input type="date" class="form-control" id="lastrundate" name="lastrundate" placeholder="Enter Last run date">
+                                    </div>
+                             </div>
+                             <!-- filter  -->
+                             <div class="form-group row">
+                                <label for="date" class="col-md-2 col-form-label"><b>Filter :</b></label>
+                                <select>
+                                        <option value="-1">--select--</option>
+                                        <option value="1">Fvalue1</option>
+                                        <option value="2">Fvalue2</option>
+                                        <option value="3">Fvalue3</option>
+                                </select>
+                            </div>
+                            <!-- is re-resolution -->
+                            <div class="form-group row">
+                                <div class="col-md-6 offset-md-2">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" name="approve" id="approve" value="">
+                                        <label class="form-check-label" for="approve">
+                                            <strong>IsReresolution?</strong>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                         
+                            <!-- is mailer required -->
+                           <!--  
+                            <div class="form-group row">
+                                <div class="col-md-6 offset-md-2">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" name="approve" id="approve" value="">
+                                        <label class="form-check-label" for="approve">
+                                            <strong>IsMailerRequied?</strong>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        -->
+                             <!-- table -->
+                             <div class="form-group row">
+                                    <label for="table" class="col-md-2 col-form-label"><b>Table</b></label>
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" id="table" name="table" placeholder="Enter Table name">
+                                    </div>
+                             </div>
+                             <!-- filter value -->
+                             <div class="form-group row">
+                                    <label for="date" class="col-md-2 col-form-label"><b>Filter Value:</b></label>
+                                    <select>
+                                            <option value="-1">--select--</option>
+                                            <option value="1">value1</option>
+                                            <option value="2">value2</option>
+                                            <option value="3">value3</option>
+                                    </select>
+                            </div>
+
+                             <!-- filter intervel -->
+                             <div class="form-group row">
+                                    <label for="date" class="col-md-2 col-form-label"><b>Filter Interval:</b></label>
+                                    <select>
+                                            <option value="-1">--select--</option>
+                                            <option value="1">SS</option>
+                                            <option value="2">MM</option>
+                                            <option value="3">HH</option>
+                                 
+                                    </select>
+                            </div>
+                            <!-- smtp server -->
+                            <div class="form-group row">
+                                    <label for="smtpserver" class="col-md-2 col-form-label"><b>SMTP Sever</b></label>
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" id="smtpserver" name="smtpserver" placeholder="Enter smpt server">
+                                    </div>
+                             </div>
+                             <!-- SMTP user id -->
+                            <div class="form-group row">
+                                    <label for="smtpuserid" class="col-md-2 col-form-label"><b>SMTP User ID</b></label>
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" id="smtpuserid" name="smtpuserid" placeholder="Enter smtp user id">
+                                    </div>
+                            </div>
+                            <!-- SMTP password -->
+                            <div class="form-group row">
+                                    <label for="smtppassword" class="col-md-2 col-form-label"><b>SMTP Password</b></label>
+                                    <div class="col-md-10">
+                                        <input type="password" class="form-control" id="smtppassword" name="smtppassword" placeholder="Enter SMTP Password">
+                                    </div>
+                            </div>
+                             <!-- smtp port number -->
+                             <div class="form-group row">
+                                    <label for="port" class="col-md-2 col-form-label"><b>SMTP Port</b></label>
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" id="port" name="port" placeholder="Enter smtp port">
+                                    </div>
+                            </div>
+                            <!-- column name -->
+                            <div class="form-group row">
+                                    <label for="column" class="col-md-2 col-form-label"><b>Column Name</b></label>
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" id="column" name="column" placeholder="Enter column name">
+                                    </div>
+                             </div>
+                             <!-- submit button -->
+
+                            <div class="form-group row">
+                                    <div class="offset-md-6 col-md-6">
+                                        <button type="submit" class="btn btn-primary">Save</button>
+                                        <button type="submit" class="btn btn-primary">Clear</button>
+                                     </div>
+                                     
+                            </div>
+                    </form>
+                    <!-- form filling end -->
+
+            </div>
+             <div class="col-12 col-md">
+            </div>
+    </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            
+           <div class="row justify-content-center">             
+                <div class="col-auto">
+                    <p>© Copyright 2018 iAutomate DRYice</p>
+                </div>
+           </div>
+        </div>
+    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

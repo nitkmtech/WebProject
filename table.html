@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link href="css/styles.css" rel="stylesheet">
+    
+    <title>iAutomate</title>
+</head>
+
+<body>
+        <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                   <a class="navbar-brand" href="#">iAutomate</a>
+                   <div class="collapse navbar-collapse" id="Navbar">
+                        <ul class="navbar-nav mr-auto">
+                                <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-registered fa-lg"></span> Registration</a></li>
+                                <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-info fa-lg"></span> CustomersDetails</a></li>
+                               
+                        </ul> 
+                    </div>             
+                </div>
+            </nav>
+   
+
+    <div class="container">
+        <div class="row">
+                <ol class="col-12 breadcrumb">
+                        <li class="breadcrumb-item"><a href="./index.html">Registration</a></li>
+                        <li class="breadcrumb-item active">CustomersDetails</li>
+                </ol>
+            <div class="col-12">
+               <h3>Customers Details</h3>
+               <hr>
+            </div>
+        </div>
+        <!-- filter intervel -->
+        <div class="form-group row">
+            <label for="date" class=" offset-md-3 col-md-2 col-form-label "><b>Customer:</b></label>
+            <select>
+                    <option value="-1">--select--</option>
+                    <option value="1">All</option>
+                    <option value="2">Customer1</option>
+                    <option value="3">Customer2</option>
+                    <option value="4">Customer3</option>
+            </select>
+     </div>
+        
+       <div class="row row-content">
+            <div class="col-12 col-sm-10">
+                <h2>Customers  Details</h2>
+                <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>Name</th>
+                                    <th>URL</th>
+                                    <th>FilterValue</th>
+                                    <th>Intervel</th>
+                                    <th>ViewAction</th>
+                                    <th>DeleteAction</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>Customer1</th>
+                                    <td>url1</td>
+                                    <td>value1</td>
+                                    <td>mm1</td>
+                                    <!-- <td>&nbsp;</td> -->
+                                    <!-- <td><button type="button" class="fa fa-eye btn btn-primary">View</button></td> -->
+                                    <td><button type="button" class="fa fa-eye btn btn-primary" onclick="window.location.href='./index.html'">View</button></td>
+                                    <td><button type="button" class="fa fa-trash-o btn btn-primary">Delete</button></td>
+                                </tr>
+                                <tr>
+                                    <th>Customer2</th>
+                                    <td>url2</td>
+                                    <td>value2</td>
+                                    <td>mm2</td>
+                                    
+                                    <td><button type="button" class="fa fa-eye btn btn-primary" onclick="window.location.href='./index.html'">View</button></td>
+                                    <td><button type="button" class="fa fa-trash-o btn btn-primary">Delete</button></td>
+                                </tr>
+                                <tr>
+                                    <th>Customer3</th>
+                                    <td>url3</td>
+                                    <td>value3</td>
+                                    <td>mm3</td>
+                                    
+                                    <td><button type="button" class="fa fa-eye btn btn-primary" onclick="window.location.href='./index.html'">View</button></td>
+                                    <td><button type="button" class="fa fa-trash-o btn btn-primary">Delete</button></td>
+                                </tr>
+                                <tr>
+                                    <th>Customer4</th>
+                                    <td>url4</td>
+                                    <td>value4</td>
+                                    <td>mm4</td>
+                                    <td><button type="button" class="fa fa-eye btn btn-primary" onclick="window.location.href='./index.html'">View</button></td>
+                                    <td><button type="button" class="fa fa-trash-o btn btn-primary">Delete</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+            </div>
+             <div class="col-12 col-sm-3">
+            </div>
+       </div> 
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            
+           <div class="row justify-content-center">             
+                <div class="col-auto">
+                    <p>© Copyright 2018 iAutomate DRYice</p>
+                </div>
+           </div>
+        </div>
+    </footer>
+    
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/tether/dist/js/tether.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
